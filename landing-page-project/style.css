@@ -1,8 +1,5 @@
 body {
-    background-color: #1F2937;
     font-family: 'Roboto', sans-serif;
-    margin-left: 8%;
-    margin-right: 8%;
 }
 
 a {
@@ -14,10 +11,9 @@ ul li {
     list-style: none;
 }
 
-img {
-    height: auto;
-    max-width: 400px;
-    margin-left: 40px;
+ul {
+    display: flex;
+    gap: 10px;
 }
 
 h1 {
@@ -26,40 +22,36 @@ h1 {
     color: #F9FAF8
 }
 
-ul {
-    display: flex;
-    gap: 10px;
+button {
+    width: 100px;
+    background-color: #3882f6;
+    color: #F9FAF8;
 }
 
-p, .links {
+.bg-blue {
+    background-color: #1F2937;
+    margin: -8px -8px 0;
+    padding-bottom: 30px;
+}
+
+.text-white, .links {
     color: #E5E7EB;
     font-size: 18px; 
 }
 
-button {
-    width: 100px;
-    background-color: #3882f6;
-    color:black;
-}
-
-h2 {
-    margin-top: 36px;
-    color:#F9FAF8;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.hero {
+.container-header {
     color: #F9FAF8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 0 8% 16px; 
+    padding: 16px;
 }
 
 .logo {
     font-size: 24px;
     font-weight: 700;
+    color: #F9FAF8;
 }
 
 .header {
@@ -68,21 +60,49 @@ h2 {
     align-items: center;
 }
 
+.header-right {
+    margin-right: 9%;
+}
+
+.header-pic {
+    max-width: 400px;
+    height: auto;
+}
+
 .header-left {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
 }
 
-.information {
+.bg-white {
     margin-top: 40px;
     display: flex;
-    justify-content: space-around;
-    background-color: #E5E7EB;
+    background-color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
 }
 
 .skele-pics {
-    height: auto;
-    max-width: 75px;
-    display: flex;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.text-blue-bold {
+    color: #1F2937;
+}
+
+.info-header-text {
+    color: #1F2937;
+    font-weight: 800;
+    font-size: 26px;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.container-info {
+    text-align: center;
+    padding: 40px;
 }
